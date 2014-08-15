@@ -34,7 +34,7 @@ This cookbook requires Ruby 1.9+ and is tested against:
 
 ## Usage
 
-Clone or fork this repo and change the settings for your site. The master repo is aimed at a local vagrant copy, and the [digitalocean]() branch is, to everyone's surprise, aimed at deployment on [Digital Ocean](http://www.digitalocean.com/).
+Clone or fork this repo and change the settings for your site. The master repo is aimed at a local vagrant copy, and the [digitalocean](https://github.com/arvidbjorkstrom/vagrant-appserver/tree/digitalocean) branch is, to everyone's surprise, aimed at deployment on [Digital Ocean](https://www.digitalocean.com).
 
 
 ## Attributes
