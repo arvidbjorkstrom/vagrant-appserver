@@ -8,11 +8,12 @@ gem 'berkshelf'
 #   gem "berkshelf", github: "berkshelf/berkshelf"
 #   gem "vagrant", github: "mitchellh/vagrant", tag: "v1.5.2"
 # end
-#
-# group :plugins do
-#   gem "vagrant-berkshelf", github: "berkshelf/vagrant-berkshelf"
-#   gem "vagrant-omnibus", github: "schisamo/vagrant-omnibus"
-# end
+
+ group :plugins do
+   gem "vagrant-berkshelf", github: "berkshelf/vagrant-berkshelf"
+   gem "vagrant-omnibus", github: "schisamo/vagrant-omnibus"
+   gem "vagrant-digitalocean", github: "smdahlen/vagrant-digitalocean"
+ end
 
 gem 'test-kitchen'
 gem 'kitchen-vagrant'
