@@ -1,8 +1,10 @@
-name             'appserver-template'
-maintainer       'YOUR_NAME'
-maintainer_email 'YOUR_EMAIL'
-license          'All rights reserved'
-description      'Installs/Configures appserver-template'
-long_description 'Installs/Configures appserver-template'
+name             'vagrant-appserver'
+maintainer       'Arvid Björkström'
+maintainer_email 'arvid@bjorkstrom.se'
+license          'MIT'
+description      'Installs/Configures vagrant-appserver'
+long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
+supports "ubuntu", ">= 12.04.0"
 
+depends "appserver" # https://github.com/arvidbjorkstrom/chef-appserver

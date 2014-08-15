@@ -1,6 +1,6 @@
 # 0.1.0
 
-Initial release of appserver-template
+Initial release of vagrant-appserver
 
 * Enhancements
   * an enhancement
