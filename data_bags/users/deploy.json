@@ -1,7 +1,7 @@
 {
   "id": "deploy",
   "shell": "/bin/zsh",
-  "oh-my-zsh" : { "enabled": true, "theme": "agnoster", "plugins": ["git", "rvm"] },
+  "oh-my-zsh" : { "enabled": true, "theme": "agnoster2", "plugins": ["git", "rvm"] },
   "ssh_keys": [
     "Add your key!"
   ],
