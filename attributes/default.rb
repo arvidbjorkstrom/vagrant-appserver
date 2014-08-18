@@ -6,6 +6,8 @@
 # Timezone
 default['tz'] = 'Europe/Stockholm'
 
+default['chef_environment'] = 'local' #production
+
 # MySQL
 default['mysql']['server_root_password'] = 'i7T6zeTDoyqCWG'
 default['mysql']['server_debian_password'] = 'i7T6zeTDoyqCWG'
