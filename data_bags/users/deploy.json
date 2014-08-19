@@ -1,0 +1,11 @@
+{
+  "id": "deploy",
+  "shell": "/bin/zsh",
+  "oh-my-zsh-theme": "agnoster2",
+  "ssh_keys": [
+    "Add your key!"
+  ],
+  "groups": [
+    "sysadmin"
+  ]
+}
