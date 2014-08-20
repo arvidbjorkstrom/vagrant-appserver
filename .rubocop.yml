@@ -1,0 +1,12 @@
+# Cop supports --auto-correct.
+Style/EmptyLines:
+  Enabled: false
+
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+Style/Next:
+  Enabled: false
+
+# Cop supports --auto-correct.
+Style/SingleSpaceBeforeFirstArg:
+  Exclude:
+  - metadata.rb

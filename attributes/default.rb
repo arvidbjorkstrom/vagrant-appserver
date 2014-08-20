@@ -13,28 +13,28 @@ default['mysql']['server_root_password'] = 'i7T6zeTDoyqCWG'
 default['mysql']['server_debian_password'] = 'i7T6zeTDoyqCWG'
 
 default['mysql']['databases'] = [
-	{
-		'database' => 'dbname',
-		'username' => 'dbuser',
-		'password' => 'dbpass',
-		'overwrite' => true
-	}
+  {
+    'database' => 'dbname',
+    'username' => 'dbuser',
+    'password' => 'dbpass',
+    'overwrite' => true
+  }
 ]
 
 # NGINX
 default['nginx']['sites'] = [
-	{
-		'name' => 'domain.se',
-		'host' => 'www.domain.se',
-		'root' => '/var/www/domain.se/public',
-		'index' => 'index.php index.html index.htm',
-		'slashlocation' => 'try_files $uri $uri/ /index.php?$query_string',
-		'phpfpm' => true,
-		'templatesource' => 'serverblock.conf.erb',
-		'templatecookbook' => 'appserver',
-		'artisan_migrate' => true,
-		'git' => false
-	}
+  {
+    'name' => 'domain.se',
+    'host' => 'www.domain.se',
+    'root' => '/var/www/domain.se/public',
+    'index' => 'index.php index.html index.htm',
+    'slashlocation' => 'try_files $uri $uri/ /index.php?$query_string',
+    'phpfpm' => true,
+    'templatesource' => 'serverblock.conf.erb',
+    'templatecookbook' => 'appserver',
+    'artisan_migrate' => true,
+    'git' => false
+  }
 ]
 
 # PHP

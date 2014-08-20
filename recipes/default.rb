@@ -3,4 +3,4 @@
 # Recipe:: default
 #
 
-include_recipe "appserver::default"
+include_recipe 'appserver::default'
