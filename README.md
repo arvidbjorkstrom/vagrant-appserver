@@ -31,6 +31,9 @@ This cookbook requires Ruby 1.9+ and is tested against:
 * 2.0.0
 * 2.1.2
 
+### Vagrant
+
+Uses [Vagrant](http://www.vagrantup.com) and the [Digital Ocean Provider](https://github.com/smdahlen/vagrant-digitalocean) for Digital Ocean deployment
 
 ## Usage
 
