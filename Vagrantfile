@@ -7,7 +7,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.require_version ">= 1.5.0"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.hostname = "laravelserver"
+  config.vm.hostname = "local.domain.se"
 
   config.omnibus.chef_version = :latest
 
