@@ -15,7 +15,7 @@ default['mysql']['databases'] = [
     'database' => 'dbname',
     'username' => 'dbuser',
     'password' => 'dbpass',
-    'overwrite' => true
+    'overwrite' => false
   }
 ]
 
