@@ -29,6 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provision :chef_solo do |chef|
     chef.data_bags_path = "data_bags"
+    chef.environments_path = "environments"
     chef.environment = "production"
     chef.run_list = [
         "recipe[vagrant-appserver::default]"
