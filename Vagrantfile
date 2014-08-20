@@ -22,6 +22,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     mount_options: ["dmode=775,fmode=664"]
 
   config.vm.provider :virtualbox do |vb|
+    vb.name = "local.domain.se"
     vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
   config.berkshelf.enabled = true
