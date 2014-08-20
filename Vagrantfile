@@ -18,6 +18,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider :digital_ocean do |provider, override|
     override.ssh.private_key_path = '~/.ssh/id_rsa'
 
+    provider.name = "domain.se"
     provider.token = 'YOUR_API_KEY'
     provider.image = 'Ubuntu 14.04 x64'
     provider.region = 'AMS2'
