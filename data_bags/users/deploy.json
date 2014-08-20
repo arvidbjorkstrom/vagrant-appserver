@@ -5,6 +5,7 @@
   "ssh_keys": [
     "Add your key!"
   ],
+  "git_key": "Add an rsa style private key for git deploy!",
   "groups": [
     "sysadmin"
   ]
