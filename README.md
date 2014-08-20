@@ -17,7 +17,7 @@ recipes should run on these platforms without error:
 
 ### Cookbooks
 
-* [appserver](http://github.com/arvidbjorkstrom/chef-appserver) (check the cookbook [README](https://github.com/arvidbjorkstrom/chef-appserver/blob/master/README.md) for more dependencies)
+* [appserver](http://github.com/arvidbjorkstrom/chef-appserver) (check the cookbook [README](https://github.com/arvidbjorkstrom/chef-appserver#cookbooks) for more cookbook dependencies)
 
 ### Chef
 
