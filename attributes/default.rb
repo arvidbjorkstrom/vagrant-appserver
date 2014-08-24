@@ -31,6 +31,7 @@ default['nginx']['sites'] = [
     'templatesource' => 'serverblock.conf.erb',
     'templatecookbook' => 'appserver',
     'artisan_migrate' => false,
+    'composer_update' => true,
     'git' => true,
     'git_path' => '/var/www/domain.se',
     'git_repo' => 'git@bitbucket.org:gituser/domain.se.git',
