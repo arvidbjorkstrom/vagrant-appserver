@@ -32,7 +32,8 @@ default['nginx']['sites'] = [
     'templatecookbook' => 'appserver',
     'artisan_migrate' => true,
     'composer_update' => true,
-    'git' => false
+    'git' => false,
+    'writeable_dirs' => []
   }
 ]
 
