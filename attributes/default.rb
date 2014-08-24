@@ -31,6 +31,7 @@ default['nginx']['sites'] = [
     'templatesource' => 'serverblock.conf.erb',
     'templatecookbook' => 'appserver',
     'artisan_migrate' => true,
+    'composer_update' => true,
     'git' => false
   }
 ]
