@@ -32,6 +32,7 @@ default['nginx']['sites'] = [
     'template_cookbook' => 'appserver',
     'artisan_migrate' => false,
     'composer_update' => true,
+    'composer_update_path' => '/var/www/domain.se',
     'git' => true,
     'git_path' => '/var/www/domain.se',
     'git_repo' => 'git@bitbucket.org:gituser/domain.se.git',
