@@ -1,0 +1,8 @@
+{
+  "id": "vagrant",
+  "shell": "/bin/zsh",
+  "oh-my-zsh-theme": "agnoster2",
+  "groups": [
+    "sysadmin"
+  ]
+}
