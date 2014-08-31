@@ -33,6 +33,9 @@ default['nginx']['sites'] = [
     'artisan_migrate' => true,
     'composer_update' => true,
     'git' => false,
+    'git_path' => '/var/www/domain.se',
+    'git_repo' => 'git@bitbucket.org:gituser/domain.se.git',
+    'git_branch' => 'master',
     'writeable_dirs' => []
   }
 ]
