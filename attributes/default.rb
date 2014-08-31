@@ -34,9 +34,6 @@ default['nginx']['sites'] = [
     'composer_update' => true,
     'composer_update_path' => '/var/www/domain.se',
     'git' => false,
-    'git_path' => '/var/www/domain.se',
-    'git_repo' => 'git@bitbucket.org:gituser/domain.se.git',
-    'git_branch' => 'master',
     'writeable_dirs' => []
   }
 ]
