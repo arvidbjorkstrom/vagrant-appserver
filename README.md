@@ -38,6 +38,7 @@ Uses [Vagrant](http://www.vagrantup.com) and the [Digital Ocean Provider](https:
 ## Usage
 
 Clone or fork this repo and change the settings to suit your site. The [master](https://github.com/arvidbjorkstrom/vagrant-appserver/tree/master) repo is aimed at a local vagrant copy, and the [digitalocean](https://github.com/arvidbjorkstrom/vagrant-appserver/tree/digitalocean) branch is, to everyone's surprise, aimed at deployment on [Digital Ocean](https://www.digitalocean.com).
+If you're going to use [Digital Ocean](https://www.digitalocean.com/?refcode=345cedb6329b), and you haven't got an account yet - use [my affiliate link](https://www.digitalocean.com/?refcode=345cedb6329b) when you register. You'll get $10, and I'll get a kickback if you continue using it.
 > A tip is to search for "domain.se" in `attributes/default.rb` and `Vagrantfile`. Also make sure to add ssh keys to the deploy user data bag at `data_bags/users/deploy.json`
 
 
