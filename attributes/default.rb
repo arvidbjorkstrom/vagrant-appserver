@@ -30,6 +30,7 @@ default['nginx']['sites'] = [
     'phpfpm' => true,
     'template_source' => 'serverblock.conf.erb',
     'template_cookbook' => 'appserver',
+    'environment' => 'prod',
     'artisan_migrate' => false,
     'composer_update' => true,
     'composer_update_path' => '/var/www/domain.se',
