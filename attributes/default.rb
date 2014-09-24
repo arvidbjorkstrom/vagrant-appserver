@@ -23,8 +23,9 @@ default['mysql']['databases'] = [
 default['nginx']['sites'] = [
   {
     'name' => 'domain.se',
+    'base_path' => '/var/www/domain.se',
     'host' => 'www.domain.se',
-    'root' => '/var/www/domain.se/public',
+    'webroot_subpath' => '/public',
     'index' => 'index.php index.html index.htm',
     'location' => 'try_files $uri $uri/ /index.php?$query_string',
     'phpfpm' => true,
@@ -32,10 +33,11 @@ default['nginx']['sites'] = [
     'template_cookbook' => 'appserver',
     'environment' => 'prod',
     'compass_compile' => true,
-    'compass_path' => '/var/www/domain.se',
+    'compass_subpath' => '',
     'artisan_migrate' => true,
+    'artisan_subpath' => 'artisan',
     'composer_update' => true,
-    'composer_update_path' => '/var/www/domain.se',
+    'composer_subpath' => '',
     'git' => false,
     'writeable_dirs' => []
   }
