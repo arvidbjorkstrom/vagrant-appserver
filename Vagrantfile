@@ -18,8 +18,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.synced_folder 'path/to/your/site/folder/',
                           '/var/www/domain.se',
-                          owner: 'www-data',
-                          group: 'vagrant',
+                          owner: 'vagrant',
+                          group: 'www-data',
                           mount_options: ['dmode=775,fmode=664']
 
   config.vm.provider :virtualbox do |vb|
