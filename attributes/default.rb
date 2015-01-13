@@ -39,6 +39,7 @@ default['nginx']['sites'] = [
     'composer_update' => true,
     'composer_subpath' => '',
     'git' => false,
+    'ssl' => false,
     'writeable_dirs' => []
   }
 ]
