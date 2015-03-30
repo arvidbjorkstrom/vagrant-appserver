@@ -3,8 +3,8 @@
 # Recipe:: default
 #
 
-# Swap file, size in MB
-default['swapsize'] = 2048
+# Swap file, multiples of the server memory size
+default['swapsize'] = 2
 
 # Timezone
 default['tz'] = 'Europe/Stockholm'

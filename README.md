@@ -46,6 +46,9 @@ If you're going to use [Digital Ocean](https://www.digitalocean.com/?refcode=345
 
 ```ruby
 
+# Swap file, multiples of the server memory size
+default['swapsize'] = 2
+
 # Timezone
 default['tz'] = 'Europe/Stockholm'
 
