@@ -3,6 +3,9 @@
 # Recipe:: default
 #
 
+# Swap file, size in MB
+default['swapsize'] = 2048
+
 # Timezone
 default['tz'] = 'Europe/Stockholm'
 
