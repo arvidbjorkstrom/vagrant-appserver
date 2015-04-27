@@ -66,24 +66,43 @@ default['mysql']['databases'] = [
   }
 ]
 
-
 # NGINX
 default['nginx']['sites'] = [
   {
     'name' => 'domain.se',
-    'host' => 'domain.se www.domain.se',
-    'root' => '/var/www/example.se/public',
-    'listen' => '*.80',
+    'base_path' => '/var/www/domain.se',
+    'host' => 'www.domain.se',
+    'webroot_subpath' => 'public',
     'index' => 'index.php index.html index.htm',
-    'slashlocation' => 'try_files $uri $uri/ /index.php?$query_string',
+    'location' => 'try_files $uri $uri/ /index.php?$query_string',
     'phpfpm' => true,
-    'templatesource' => 'serverblock.conf.erb',
-    'templatecookbook' => 'appserver',
-    'artisan_migrate' => true,
+    'template_source' => 'serverblock.conf.erb',
+    'template_cookbook' => 'appserver',
+    'environment' => 'prod',
+    'db_host' => 'localhost',
+    'db_database' => 'dbname',
+    'db_username' => 'dbuser',
+    'db_password' => 'dbpass',
+    'compass_compile' => true,
+    'compass_subpath' => '',
+    'artisan_migrate' => false,
+    'artisan_subpath' => 'artisan',
+    'composer_install' => true,
+    'composer_subpath' => '',
     'git' => true,
-    'git_path' => '/var/www/example.se',
-    'git_repo' => 'git@github.com:gitsite/deployment.git',
-    'git_branch' => 'master'
+    'git_subpath' => '',
+    'git_repo' => 'git@bitbucket.org:gituser/domain.se.git',
+    'git_branch' => 'master',
+    'ssl' => true,
+    'ssl_key' => '-----BEGIN RSA PRIVATE KEY-----
+...
+-----END RSA PRIVATE KEY-----
+',
+    'ssl_crt' => '-----BEGIN CERTIFICATE-----
+...
+-----END CERTIFICATE-----
+',
+    'writeable_dirs' => []
   }
 ]
 
