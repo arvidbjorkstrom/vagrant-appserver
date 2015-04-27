@@ -71,19 +71,28 @@ default['mysql']['databases'] = [
 default['nginx']['sites'] = [
   {
     'name' => 'domain.se',
-    'host' => 'domain.se www.domain.se',
-    'root' => '/var/www/example.se/public',
-    'listen' => '*.80',
+    'base_path' => '/var/www/domain.se',
+    'host' => 'www.domain.se',
+    'webroot_subpath' => 'public',
     'index' => 'index.php index.html index.htm',
-    'slashlocation' => 'try_files $uri $uri/ /index.php?$query_string',
+    'location' => 'try_files $uri $uri/ /index.php?$query_string',
     'phpfpm' => true,
-    'templatesource' => 'serverblock.conf.erb',
-    'templatecookbook' => 'appserver',
+    'template_source' => 'serverblock.conf.erb',
+    'template_cookbook' => 'appserver',
+    'environment' => 'prod',
+    'db_host' => 'localhost',
+    'db_database' => 'dbname',
+    'db_username' => 'dbuser',
+    'db_password' => 'dbpass',
+    'compass_compile' => true,
+    'compass_subpath' => '',
     'artisan_migrate' => true,
-    'git' => true,
-    'git_path' => '/var/www/example.se',
-    'git_repo' => 'git@github.com:gitsite/deployment.git',
-    'git_branch' => 'master'
+    'artisan_subpath' => 'artisan',
+    'composer_update' => true,
+    'composer_subpath' => '',
+    'git' => false,
+    'ssl' => false,
+    'writeable_dirs' => []
   }
 ]
 
