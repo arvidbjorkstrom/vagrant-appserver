@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     provider.name = 'domain.se'
     provider.token = 'YOUR_API_KEY'
-    provider.image = 'Ubuntu 14.04 x64'
+    provider.image = 'ubuntu-14-04-x64'
     provider.region = 'AMS2'
     provider.size = '1GB'
     provider.private_networking = true
