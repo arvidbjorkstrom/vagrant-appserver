@@ -22,7 +22,7 @@ default['mysql']['databases'] = [
   }
 ]
 
-# NGINX
+# NGINX config and Site install & deploy
 default['nginx']['sites'] = [
   {
     'name' => 'domain.se',
