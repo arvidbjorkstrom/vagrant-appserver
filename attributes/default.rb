@@ -90,6 +90,10 @@ bhvFn46bC+m9dCpqKahjOFFzEOgveS9lEjN6n5ipKfIHbXI2EiLCiycam1QiSAZ/
 rRQz
 -----END CERTIFICATE-----
 ',
+    'artisan_queuelisten' => true,
+    'artisan_queueworkers' => 8,
+    'artisan_cron' => [],
+    'cronjobs' => [],
     'writeable_dirs' => []
   }
 ]
