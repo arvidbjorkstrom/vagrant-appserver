@@ -53,6 +53,10 @@ default['nginx']['sites'] = [
     'gulp_subpath' => '',
     'git' => false,
     'ssl' => false,
+    'artisan_queuelisten' => false,
+    'artisan_queueworkers' => 0,
+    'artisan_cron' => [],
+    'cronjobs' => [],
     'writeable_dirs' => []
   }
 ]
