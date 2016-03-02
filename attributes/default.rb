@@ -22,6 +22,14 @@ default['mysql']['databases'] = [
   }
 ]
 
+# Redis
+default['redisio']['servers'] = [
+  {
+    'port' => '6379',
+    'name' => "ideanation"
+  }
+]
+
 # NGINX config and Site install & deploy
 default['nginx']['sites'] = [
   {
