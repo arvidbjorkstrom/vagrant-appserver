@@ -63,6 +63,7 @@ default['nginx']['sites'] = [
     'ssl' => false,
     'artisan_queuelisten' => false,
     'artisan_queueworkers' => 0,
+    'artisan_queuelogpath' => 'storage/logs/worker.log',
     'artisan_cron' => [],
     'cronjobs' => [],
     'writeable_dirs' => []
