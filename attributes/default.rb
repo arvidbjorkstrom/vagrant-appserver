@@ -100,9 +100,12 @@ rRQz
 ',
     'artisan_queuelisten' => true,
     'artisan_queueworkers' => 8,
+    'artisan_queuelogpath' => 'storage/logs/worker.log',
     'artisan_cron' => [],
     'cronjobs' => [],
-    'writeable_dirs' => []
+    'writeable_dirs' => [
+      'storage/'
+    ]
   }
 ]
 
