@@ -26,7 +26,8 @@ default['mysql']['databases'] = [
 default['redisio']['servers'] = [
   {
     'port' => '6379',
-    'name' => "ideanation"
+    'name' => 'redisname',
+    'requirepass' => 'redispass'
   }
 ]
 
