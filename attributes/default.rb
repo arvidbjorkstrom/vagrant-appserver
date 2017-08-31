@@ -135,3 +135,12 @@ default['opcache']['max_accelerated_files'] = '4000'
 default['opcache']['revalidate_freq'] = '1'
 default['opcache']['fast_shutdown'] = '1'
 default['opcache']['enable_cli'] = '1'
+
+# Compass
+node['compass']['install'] = false
+
+# Node
+default['nodejs']['npm']['packages'] = %w[gulp bower]
+
+# Redis
+default['redisio']['install'] = false
