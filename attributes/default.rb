@@ -13,6 +13,8 @@ default['tz'] = 'Europe/Stockholm'
 default['mysql']['server_root_password'] = 'i7T6zeTDoyqCWG'
 default['mysql']['server_debian_password'] = 'i7T6zeTDoyqCWG'
 
+default['mysql']['version'] = '5.6'
+
 default['mysql']['databases'] = [
   {
     'database' => 'dbname',
@@ -119,6 +121,7 @@ rRQz
 ]
 
 # PHP
+default['php']['version'] = '5.6'
 default['php']['error_reporting'] = 'E_ALL'
 default['php']['display_errors'] = 'Off'
 default['php']['log_errors'] = 'On'
@@ -137,7 +140,7 @@ default['opcache']['fast_shutdown'] = '1'
 default['opcache']['enable_cli'] = '1'
 
 # Compass
-node['compass']['install'] = false
+default['compass']['install'] = false
 
 # Node
 default['nodejs']['npm']['packages'] = %w[gulp bower]
