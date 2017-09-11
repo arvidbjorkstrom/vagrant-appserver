@@ -24,7 +24,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     provider.ssh_key_name = 'Vagrant'
 
     provider.name = 'domain.se'
-    provider.token = 'YOUR_API_KEY' # rubocop:disable LineLength
+    provider.token = 'YOUR_API_KEY_YOUR_API_KEY_YOUR_API_KEY_YOUR_API_KEY_YOUR_API_KEY' # rubocop:disable LineLength
     provider.image = 'ubuntu-14-04-x64'
     provider.region = 'AMS2'
     provider.size = '1GB'
