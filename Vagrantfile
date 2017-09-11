@@ -15,6 +15,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'digital_ocean'
   config.vm.box_url = 'https://github.com/smdahlen/vagrant-digitalocean/raw/master/box/digital_ocean.box'
 
+  # For production servers, requires vagrant plugin vagrant-triggers
+  # config.trigger.reject [:destroy, :halt]
+
   config.vm.provider :digital_ocean do |provider, override|
     override.ssh.private_key_path = '~/.ssh/id_rsa'
     provider.ssh_key_name = 'Vagrant'
