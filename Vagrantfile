@@ -20,6 +20,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   config.vm.provider :digital_ocean do |provider, override|
     override.ssh.private_key_path = '~/.ssh/id_rsa'
+    override.nfs.functional = false
     provider.ssh_key_name = 'Vagrant'
 
     provider.name = 'domain.se'
