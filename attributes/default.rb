@@ -12,6 +12,7 @@ default['tz'] = 'Europe/Stockholm'
 # MySQL
 default['mysql']['server_root_password'] = 'i7T6zeTDoyqCWG'
 default['mysql']['server_debian_password'] = 'i7T6zeTDoyqCWG'
+
 default['mysql']['version'] = '5.6'
 
 default['mysql']['databases'] = [
