@@ -131,6 +131,7 @@ default['php']['post_max_size'] = '96M'
 default['php']['upload_max_filesize'] = '64M'
 default['php']['max_file_uploads'] = '20'
 default['php']['memory_limit'] = '256M'
+default['php']['plugins'] = %w[xml dom]
 
 # OPcache
 default['opcache']['enabled'] = '1'
