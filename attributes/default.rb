@@ -13,7 +13,7 @@ default['tz'] = 'Europe/Stockholm'
 default['mysql']['server_root_password'] = 'i7T6zeTDoyqCWG'
 default['mysql']['server_debian_password'] = 'i7T6zeTDoyqCWG'
 
-default['mysql']['version'] = '5.6'
+default['mysql']['version'] = '5.7'
 
 default['mysql']['databases'] = [
   {
@@ -23,6 +23,9 @@ default['mysql']['databases'] = [
     'overwrite' => false
   }
 ]
+
+# AutoMySQLbackup
+default['automysqlbackup']['mysql_dump_password'] = default['mysql']['server_root_password']
 
 # Redis
 default['redisio']['servers'] = [
@@ -123,7 +126,7 @@ rRQz
 ]
 
 # PHP
-default['php']['version'] = '5.6'
+default['php']['version'] = '7.0'
 default['php']['error_reporting'] = 'E_ALL'
 default['php']['display_errors'] = 'Off'
 default['php']['log_errors'] = 'On'
